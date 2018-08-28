@@ -40,8 +40,95 @@
   <!--facebook 끝-->
 </head>
 <body>
+    <!-- div는 기본적으로 일정양의 면을 잡고있다. -->
+    <!-- span은 고무줄이라고 생각하면 쉽다. 애초에 면을 차지하지않고 사용하는대로 늘어난다.-->
+
+    <!-- css규칙은 속성이름:속성값의 규칙으로 사용한다.
+    <태그 style="속성이름:값; 속성이름:값;"> -> inline 방식 -->
+
+    <!-- style속성 태그
+        table {
+            border:1px;
+            color:black;
+            } -->
+    <!--
+    div.header => 태그네임.클래스네임
+    tagname >>> class >>> id
+    tagname => tagname
+    class => .classname
+    id => #id 아이디는 겹치지않게 한개만 가능
+    -->
+    <style>
+          table{
+            width:100%;
+            border:1px solid black;
+            border-collapse: collapse;
+          }
+          td{
+            border:1px solid black;
+          }
+          div.header{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(120,185,160);
+            text-align: center;
+          }
+          div.content{
+            width: 100%;
+            height: 500px;
+            background-color: rgb(245,245,245);
+            text-align: center;
+          }
+          .women {
+            color: grey;
+          }
+          .men {
+            color: red;
+          }
+          #phone {
+            color: orange;
+          }
+          #highlight-men-3 {
+            font-weight: bold;
+          }
+    </style>
   <p>
     하이욤 잇츠 준희박
   </p>
+  <div class="header">
+    <h1>회원명부</h1>
+  </div>
+  <div class="content">
+    <table>
+      <tr>
+          <th>순번</th>
+          <th>이름</th>
+          <th>성별</th>
+          <th id="phone">전화번호</th>
+      </tr>
+      <tr><!--table row-->
+          <td>1</td>
+          <td>김씨</td>
+          <td class="women">여자</td>
+          <td>010-0000-0000</td>
+      </tr>
+      <tr><!--table row-->
+          <td>2</td>
+          <td>박씨</td>
+          <td class="men">남자</td>
+          <td>010-1234-1234</td>
+      </tr>
+      <tr><!--table row-->
+          <td>2</td>
+          <td rowspan="2">박씨</td>
+          <td id="highlight-men-3" colspan="2" class="men">남자</td>
+      </tr>
+      <tr><!--table row-->
+          <td>2</td>
+          <td class="men">남자</td>
+          <td>010-1234-1234</td>
+      </tr>
+    </table>
+  </div>
 </body>
 </HTML>
