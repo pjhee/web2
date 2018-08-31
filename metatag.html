@@ -58,7 +58,27 @@
     class => .classname
     id => #id 아이디는 겹치지않게 한개만 가능
     -->
+
+    <!--180831
+    글자 사이즈 단위에 px, pt, em이있는데,
+    em을 표준으로 쓰는 추세이다. em은 배율로 키운다고 생각하면 된다.
+    1.0em이 아무설정안한 기본값
+
+    색상을 지정하는 방식
+      1.rgb로 지정하기 (0~255사이)
+      2.yellow처럼 직관적으로 지정하기
+      3.hex값으로 지정하기(rgb값을 16진수로 표현한 값)
+
+    글자의 굵기
+      1. normal값은 100과같고
+      2. bold값은 700과같다.
+
+    글씨체
+      1. 띄어쓰기가 있는 글자체는 ""안에 입력
+      2. 사용자에게 없는 폰트가 있을 수 있으므로 ,로 다음 폰트를 지정할 수 있다.
+    -->
     <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
           table{
             width:100%;
             border:1px solid black;
@@ -91,42 +111,85 @@
           #highlight-men-3 {
             font-weight: bold;
           }
+          .font-size-small {
+            font-size: 1.0em;
+          }
+          .font-size-medium {
+            font-size: 1.1em;
+          }
+          .font-size-large {
+            font-size: 1.5em;
+          }
+          .font-color-1 {
+            color:rgb(232,105,12);
+          }
+          .font-color-2 {
+            color:#0C8BE8;
+          }
+          .font-color-3 {
+            color:#8EE520;
+          }
+          .font-weight-1 {
+            font-weight: 100;
+          }
+          .font-weight-2 {
+            font-weight: 900;
+          }
+          .font-decoration-underline {
+            text-decoration: underline;
+          }
+          .font-family-1 {
+            font-family: "Times New Roman", serif;
+          }
+          .font-family-2 {
+            font-family: "Jeju Myeongjo";
+          }
     </style>
   <p>
     하이욤 잇츠 준희박
   </p>
   <div class="header">
-    <h1>회원명부</h1>
+    <h1>CSS 스타일 목록</h1>
   </div>
   <div class="content">
     <table>
       <tr>
-          <th>순번</th>
-          <th>이름</th>
-          <th>성별</th>
-          <th id="phone">전화번호</th>
+          <th>스타일</th>
+          <th>미리보기</th>
       </tr>
-      <tr><!--table row-->
-          <td>1</td>
-          <td>김씨</td>
-          <td class="women">여자</td>
-          <td>010-0000-0000</td>
+          <td>글자크기 (font-size)</td>
+          <td>
+            <span class="font-size-small">스몰사이즈..</span>
+            <span class="font-size-medium">미디움사이즈..</span>
+            <span class="font-size-large">라즤사이즈..</span>
+          </td>
+      <tr>
+          <td>글자색상 (color)</td>
+          <td>
+            <span class="font-color-1">미리봐버리기..</span>
+            <span class="font-color-2">미리미리..</span>
+            <span class="font-color-3">미리미리이이ㅣ..</span>
+          </td>
       </tr>
-      <tr><!--table row-->
-          <td>2</td>
-          <td>박씨</td>
-          <td class="men">남자</td>
-          <td>010-1234-1234</td>
+      <tr>
+          <td>글자굵기 (font-weight)</td>
+          <td>
+            <span class="font-weight-1">굵기를 대결한닷..</span>
+            <span class="font-weight-2">받아들인닷..</span>
+          </td>
       </tr>
-      <tr><!--table row-->
-          <td>2</td>
-          <td rowspan="2">박씨</td>
-          <td id="highlight-men-3" colspan="2" class="men">남자</td>
+      <tr>
+          <td>글자밑줄 (text-decoration)</td>
+          <td>
+            <span class="font-decoration-underline">밑줄이요</span>
+          </td>
       </tr>
-      <tr><!--table row-->
-          <td>2</td>
-          <td class="men">남자</td>
-          <td>010-1234-1234</td>
+      <tr>
+          <td>글씨 폰트 (font-family)</td>
+          <td>
+            <span class="font-family-1">Preview,미리보기 /</span>
+            <span class="font-family-2">Preview,미리보기</span>
+          </td>
       </tr>
     </table>
   </div>
