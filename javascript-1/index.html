@@ -18,125 +18,170 @@
 
       </div>
       <script type="text/javascript">
-        //primitive
-        var money;
-        money = 4000;
-        money = money - 3500;
+        //
+        // //function안에서만 사용되는 name, age
+        // function interactive_alert (name, age) {
+        //   if (age > 100) {
+        //       alert ('100세가 넘으셨군요!');
+        //   } else if (age > 50) {
+        //       alert ('50세가 넘으셨군요!');
+        //   } else if (age > 40) {
+        //       alert ('40세가 넘으셨군요!');
+        //   } else if (age > 30) {
+        //       alert ('30세가 넘으셨군요!');
+        //   } else if (age > 20) {
+        //       alert ('20세가 넘으셨군요!');
+        //   } else {
+        //       alert ('10세가 넘으셨군요!');
+        //   }
+        //
+        //   switch (name) {
+        //     case '박준희' :
+        //         alert('박준희입니다.');
+        //       break;
+        //
+        //     case '홍길동' :
+        //         alert('홍길동입니다.');
+        //       break;
+        //
+        //     default :
+        //         alert(name+'이시군요!');
+        //       break;
+        //   }
+        //
+        // }
+        //
+        //
+        // function addToFour(x) {
+        //   x *= 4;
+        //   return x + 4;
+        //
+        // }
+        //
+        // //primitive
+        // var money;
+        // money = 4000;
+        // money = money - 3500;
+        //
+        // var name;
+        // name = 'Park';
+        // name = name + 'JH';
+        //
+        // var boolean = false;
+        // boolean = true;
+        //
+        // //complex
+        // //array
+        // var a = new Array();
+        // a[0] = "dog";
+        // a[1] = "cat";
+        // // var a = ['dog', 'cat'];
+        //
+        // //objet-객체타입 (key-value)
+        // var obj = new Object(); //선언문만 쓸 때는 new라는 키워드를 꼭 써준다.
+        // obj.name = "Park";
+        // obj.gender = "Woman";
+        // //var obj = {name: 'Park', gender: 'Man'};
+        //
+        // //array는 배열로써 순서대로 데이터가 쌓이는 구조, 이름이 부여되지 않음
+        // //object는 이름을 붙여서 이름을가지고 데이터에 바로 접촉할 수 있다.
+        //
+        // //document.getElemenetById('console').innerHTML = boolean;
+        // //document.getElementById('console').innerHTML = (obj.name + ":" + obj.gender);
+        // document.getElementById('console').innerHTML = money;
+        //
+        // ///Charkala's
+        // // Test 1
+        //       var number = 0;
+        //       document.getElementById('numbers').innerHTML += number;
+        //
+        //       number += 1;
+        //       document.getElementById('numbers').innerHTML += number;
+        //
+        //       number += 1;
+        //       document.getElementById('numbers').innerHTML += number;
+        //
+        //       number += 1;
+        //       document.getElementById('numbers').innerHTML += number;
+        //
+        //       number += 1;
+        //       document.getElementById('numbers').innerHTML += number;
+        //
+        //       number += 1;
+        //       document.getElementById('numbers').innerHTML += number;
+        //
+        //       number += 1;
+        //       document.getElementById('numbers').innerHTML += number;
+        //       document.getElementById('numbers').innerHTML += '<br />';
+        //
+        //
+        // // Test 2
+        //       var number = 0;
+        //       document.getElementById('numbers-2').innerHTML += number;
+        //
+        //       number = 1;
+        //       document.getElementById('numbers-2').innerHTML += number;
+        //
+        //       number = 1;
+        //       document.getElementById('numbers-2').innerHTML += number;
+        //
+        //       number = 1;
+        //       document.getElementById('numbers-2').innerHTML += number;
+        //
+        //       number = 1;
+        //       document.getElementById('numbers-2').innerHTML += number;
+        //
+        //       number = 1;
+        //       document.getElementById('numbers-2').innerHTML += number;
+        //
+        //       number = 1;
+        //       document.getElementById('numbers-2').innerHTML += number;
 
-        var name;
-        name = 'Park';
-        name = name + 'JH';
+              //
+              // //if문
+              // if (money > 1000 && obj.name == 'Park') {
+              //   alert('1000원 보다 큽니다.');
+              // } else if (money > 500) {
+              //   alert('1000원 보다 작거나 같고 500원 보다 큽니다. 또 500원 보다 크고 이름이 Park이 아닙니다.');
+              // } else {
+              //   alert('500원 보다 작거나 같습니다.')
+              // }
 
-        var boolean = false;
-        boolean = true;
-
-        //complex
-        //array
-        var a = new Array();
-        a[0] = "dog";
-        a[1] = "cat";
-        // var a = ['dog', 'cat'];
-
-        //objet-객체타입 (key-value)
-        var obj = new Object(); //선언문만 쓸 때는 new라는 키워드를 꼭 써준다.
-        obj.name = "Park";
-        obj.gender = "Woman";
-        //var obj = {name: 'Park', gender: 'Man'};
-
-        //array는 배열로써 순서대로 데이터가 쌓이는 구조, 이름이 부여되지 않음
-        //object는 이름을 붙여서 이름을가지고 데이터에 바로 접촉할 수 있다.
-
-        //document.getElemenetById('console').innerHTML = boolean;
-        //document.getElementById('console').innerHTML = (obj.name + ":" + obj.gender);
-        document.getElementById('console').innerHTML = money;
-
-        ///Charkala's
-        // Test 1
-              var number = 0;
-              document.getElementById('numbers').innerHTML += number;
-
-              number += 1;
-              document.getElementById('numbers').innerHTML += number;
-
-              number += 1;
-              document.getElementById('numbers').innerHTML += number;
-
-              number += 1;
-              document.getElementById('numbers').innerHTML += number;
-
-              number += 1;
-              document.getElementById('numbers').innerHTML += number;
-
-              number += 1;
-              document.getElementById('numbers').innerHTML += number;
-
-              number += 1;
-              document.getElementById('numbers').innerHTML += number;
-              document.getElementById('numbers').innerHTML += '<br />';
+              // //switch문
+              // var prompt_name = prompt('이름을 입력해주세요.');
+              // var prompt_age = prompt('나이를 입력해주세요.');
+              // interactive_alert(prompt_name,prompt_age);
+              //
+              // var prompt_name = prompt('이름을 입력해주세요.');
+              // var prompt_age = prompt('나이를 입력해주세요.');
+              // interactive_alert(prompt_name,prompt_age);
+              //
+              // var result = addToFour(prompt_age);
+              // alert(result);
 
 
-        // Test 2
-              var number = 0;
-              document.getElementById('numbers-2').innerHTML += number;
+              //반복문 (for, while)
+              // var sum = 0;
+              // for (var i=0; i<10; i++) {
+              //   sum = sum + i;
+              //   alert(sum);
+              // }
+              //
+              // var i = 0;
+              // var sum = 0;
+              // while (i<10) {
+              //   sum += i;
+              //   alert(sum);
+              //   i++;
+              // }
 
-              number = 1;
-              document.getElementById('numbers-2').innerHTML += number;
-
-              number = 1;
-              document.getElementById('numbers-2').innerHTML += number;
-
-              number = 1;
-              document.getElementById('numbers-2').innerHTML += number;
-
-              number = 1;
-              document.getElementById('numbers-2').innerHTML += number;
-
-              number = 1;
-              document.getElementById('numbers-2').innerHTML += number;
-
-              number = 1;
-              document.getElementById('numbers-2').innerHTML += number;
-
-
-              //if문
-              if (money > 1000 && obj.name == 'Park') {
-                alert('1000원 보다 큽니다.');
-              } else if (money > 500) {
-                alert('1000원 보다 작거나 같고 500원 보다 큽니다. 또 500원 보다 크고 이름이 Park이 아닙니다.');
-              } else {
-                alert('500원 보다 작거나 같습니다.')
+              var hobby = new Array();
+              while (hobby.length < 5) {
+                hobby.push(prompt('좋아하는 것을 입력하세요.'));
               }
 
-              //switch문
-              var name = prompt('이름을 입력해주세요.');
-              var age = prompt('나이를 입력해주세요.');
-
-              if (age > 100) {
-                  alert ('100세가 넘으셨군요!');
-              } else if (age > 50) {
-                  alert ('50세가 넘으셨군요!');
-              } else if (age > 40) {
-                  alert ('40세가 넘으셨군요!');
-              } else if (age > 30) {
-                  alert ('30세가 넘으셨군요!');
-              } else if (age > 20) {
-                  alert ('20세가 넘으셨군요!');
-              } else {
-                  alert ('10세가 넘으셨군요!');
-              }
-
-              switch (name) {
-                case '박준희' :
-                    alert('박준희입니다.');
-                  break;
-
-                case '홍길동' :
-                    alert('홍길동입니다.');
-                  break;
-
-                default :
-                    alert('기본값입니다.');
-                  break;
+              for (var i=0; i < hobby.length; i++){
+                alert('당신이 좋아하는 것 '+(i+1)+'번째:'+hobby[i]);
               }
 
     </script>
